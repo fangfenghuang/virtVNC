@@ -83,10 +83,10 @@ spec:
         effect: "NoSchedule"
       containers:
       - name: virtvnc
-        image: quay.io/samblade/virtvnc:v0.1
+        image: virtvnc:v1.0
         livenessProbe:
           httpGet:
-            port: 8001
+            port: 40091
             path: /
             scheme: HTTP
           failureThreshold: 30
