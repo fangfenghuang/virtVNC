@@ -5,8 +5,11 @@
 ## Deploy
 
 ```bash
-kubectl apply -f https://github.com/wavezhang/virtVNC/raw/master/k8s/virtvnc.yaml
+kubectl apply -f /virtvnc.yaml
 ```
+
+## make image
+docker build -t virtvnv:v1.0 .
 
 ## Usage
 
