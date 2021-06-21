@@ -51,9 +51,10 @@ metadata:
   namespace: kubevirt
 spec:
   ports:
-  - port: 8001
+  - port: 40091
     protocol: TCP
-    targetPort: 8001
+    targetPort: 40091
+    nodePort: 40091
   selector:
     app: virtvnc
   type: NodePort
